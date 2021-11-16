@@ -15,4 +15,11 @@ public class EndBallSlotsScript : MonoBehaviour
         }
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.gameObject == colouredBall)
+        {
+            ballCount -= 1;
+        }
+    }
 }
